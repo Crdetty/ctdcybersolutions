@@ -405,17 +405,14 @@ footer{background:var(--dark2);border-top:1px solid rgba(0,194,255,0.1);padding:
   .about-visual{display:none}
 }
 @media(max-width:680px){
-  .nav-links{display:none;flex-direction:column;position:fixed;top:68px;left:0;width:100%;height:calc(100vh - 68px);background:#08111a;padding:2rem 5%;gap:0;z-index:800;overflow-y:auto;border-top:2px solid var(--cyan)}
-  .nav-links.open{display:flex}
-  .nav-links li{border-bottom:1px solid rgba(255,255,255,0.08)}
-  .nav-links a{padding:1.1rem 0;display:block;font-size:1.1rem;color:var(--white)!important}
-  .hamburger{display:flex}
-  .form-row{grid-template-columns:1fr}
-  .hero-stats{gap:1.8rem}
-  .footer-inner{flex-direction:column;align-items:flex-start}
-  .footer-links{flex-wrap:wrap;gap:0.9rem}
+  .nav-links{
+  display:none;flex-direction:column;
+  position:fixed;top:68px;left:0;
+  width:100%;height:calc(100vh - 68px);
+  background:#08111a;padding:2rem 5%;gap:0;
+  z-index:800;overflow-y:auto;
+  border-top:2px solid var(--cyan)
 }
-
 /* ── ENTERPRISE ──────────────────────────────── */
 #enterprise{background:var(--dark2);border-top:1px solid rgba(0,194,255,0.08)}
 .enterprise-intro{max-width:1200px;margin:0 auto 3rem}
