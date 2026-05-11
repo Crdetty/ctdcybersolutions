@@ -33,14 +33,14 @@ nav{
   display:flex;align-items:center;justify-content:space-between;
   background:rgba(13,27,42,0.95);backdrop-filter:blur(14px);
   border-bottom:1px solid rgba(0,194,255,0.12);
-  transition:all 0.3s;overflow:visible
-}
+  transition:all 0.3s
 }
 nav.scrolled{height:58px;background:rgba(8,17,26,0.98);border-bottom-color:rgba(0,194,255,0.25)}
+.nav-logo{flex-shrink:0}
 .nav-logo img{height:36px;width:auto;display:block;transition:height 0.3s}
 nav.scrolled .nav-logo img{height:30px}
 .nav-links{display:flex;align-items:center;gap:2.2rem;list-style:none}
-@media(min-width:681px){.nav-links{display:flex!important;position:static!important;height:auto!important;width:auto!important;background:transparent!important;padding:0!important;border:none!important;flex-direction:row!important}}
+.nav-links a{
   font-family:var(--font-tight);font-size:0.9rem;font-weight:600;
   letter-spacing:0.12em;text-transform:uppercase;
   color:var(--gray2);text-decoration:none;
