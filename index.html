@@ -40,11 +40,18 @@ nav.scrolled{height:58px;background:rgba(8,17,26,0.98);border-bottom-color:rgba(
 .nav-logo img{height:36px;width:auto;display:block;transition:height 0.3s}
 nav.scrolled .nav-logo img{height:30px}
 .nav-links{display:flex;align-items:center;gap:2.2rem;list-style:none}
-@media(min-width:681px){.nav-links{display:flex!important;position:static!important;height:auto!important;width:auto!important;background:transparent!important;padding:0!important;border:none!important;flex-direction:row!important}}
+.nav-links a{
   font-family:var(--font-tight);font-size:0.9rem;font-weight:600;
   letter-spacing:0.12em;text-transform:uppercase;
   color:var(--gray2);text-decoration:none;
   transition:color 0.2s;position:relative;padding-bottom:2px
+}
+.nav-links a::after{
+  content:'';position:absolute;bottom:-2px;left:0;
+  width:0;height:2px;background:var(--cyan);transition:width 0.25s ease
+}
+.nav-links a:hover{color:var(--white)}
+.nav-links a:hover::after{width:100%}
 }
 .nav-links a::after{
   content:'';position:absolute;bottom:-2px;left:0;
